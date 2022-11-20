@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+      }
+      main {
+        min-width: 500px;
+        background-color: rgb(228, 163, 23);
+        border-radius: 10px;
+        padding: 40px;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        gap: 10px;
+        color: rgb(55, 52, 52);
+        background-color: bisque;
+        border-radius: 10px;
+      }
+      h1 {
+        font-size: 3rem;
+        font-weight: 400;
+      }
+      p {
+        text-transform: uppercase;
+        font-size: 0.7rem;
+      }
+      div {
+        text-align: center;
+      }
+      input{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+     <input type="date" id="inputDate">
+      <section>
+        <div class="day">
+          <h1 id="day"></h1>
+          <p>Day</p>
+        </div>
+        <div class="hour">
+          <h1 id="hour"></h1>
+          <p>Hour</p>
+        </div>
+        <div>
+          <h1>:</h1>
+          <p></p>
+        </div>
+        <div class="minute">
+          <h1 id="minute"></h1>
+          <p>Minutes</p>
+        </div>
+        <div>
+          <h1>:</h1>
+          <p></p>
+        </div>
+        <div class="second">
+          <h1 id="second"></h1>
+          <p>Seconds</p>
+        </div>
+     
+      </section>
+    </main>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
